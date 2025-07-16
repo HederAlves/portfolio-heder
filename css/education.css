@@ -1,0 +1,140 @@
+.education {
+  padding: 2rem 0 4rem;
+}
+
+/* linha central */
+.timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 6rem 0 2rem 0;
+  gap: 1rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, var(--gradient-stops));
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+/* cada ponto e cartão */
+.timeline-item {
+  position: relative;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ponto (dot) */
+.timeline-item .dot {
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, var(--gradient-stops));
+  box-shadow: 0 0 0 4px var(--surface-color);
+  position: relative;
+  top: 0;
+}
+
+.timeline-item.top .dot {
+  order: 0;
+  margin-bottom: 0.75rem;
+}
+
+/* cartão de texto */
+.timeline-item .card {
+  min-height: 180px;
+  position: relative;
+  background: var(--surface-color);
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 280px;
+  color: var(--text-color);
+}
+
+/* alternância acima / abaixo */
+.timeline-item.top .card {
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item.bottom .dot {
+  order: 1;
+  margin-top: 0.75rem;
+}
+
+.timeline-item h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  background: linear-gradient(90deg, var(--gradient-stops));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.text-card {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.date {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* idiomas */
+.languages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.languages-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ---------- responsivo ---------- */
+@media (max-width: 700px) {
+  .timeline {
+    margin: 2rem 0 0rem 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .timeline::before {
+    top: 0;
+    left: 28px;
+    width: 3px;
+    height: 100%;
+    transform: none;
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 56px;
+    padding-right: 16px;
+  }
+
+  .timeline-item .dot {
+    position: absolute;
+    top: 0.65rem;
+    left: 28px;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .timeline-item .card {
+    margin: 0;
+    width: 100%;
+    min-height: 180px;
+  }
+}
