@@ -1,0 +1,50 @@
+.about-wrapper {
+  display: flex;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-professional,
+.about-personal {
+  flex: 1 1 45%;
+}
+
+.divider {
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gradient-stops));
+  min-height: 100%;
+  align-self: stretch;
+}
+
+.about-wrapper h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-wrapper p,
+.about-wrapper li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.about-wrapper ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    padding-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .divider {
+    display: none;
+  }
+}
