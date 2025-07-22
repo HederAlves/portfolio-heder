@@ -14,9 +14,9 @@
   justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
-  border-top: 2px solid;
+  border-bottom: 2px solid;
   border-image: linear-gradient(to right, var(--gradient-stops)) 1;
-  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Seção com imagem à direita */
