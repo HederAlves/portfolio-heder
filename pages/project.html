@@ -18,120 +18,279 @@
     </header>
 
     <main class="project-main">
-      <!-- Utilizado para melhorar o seo e a acessibilidade -->
-      <h1 class="sr-only">Projetos</h1>
-
-      <section class="project-section">
-        <img src="../assets/chale.png" alt="Chalé" />
-        <div class="project-info">
-          <h2 class="project-title">Chalé</h2>
-          <p>
-            APP de pedido em desenvolvimento para um cliente regional, o
-            problema enfrentado pelo cliente é a forma de calcular o frete
-            oferecido por outros app, então nosso foco maior no momento está
-            sendo resolver esta questão do frete. embora a tela em imagem seja
-            para desktop o uso maior será por mobile, então o responsivo já está
-            desenvolvido.
-          </p>
-          <a
-            href="https://chale-nine.vercel.app/"
-            target="_blank"
-            class="project-link"
-            >Acessar projeto</a
-          >
-        </div>
-      </section>
-
+      <!-- ===== Quirons ===== -->
       <section class="project-section reverse">
-        <img src="../assets/monbraz.png" alt="Monbraz" />
-        <div class="project-info">
-          <h2 class="project-title">MonBraz</h2>
-          <p>
-            SaaS em desenvolvimento para atender a monbraz empresa a qual já
-            trabalhei organizando por meio de planilhas o administrativo e agora
-            volto para resolver o mesmo problema com código. No momento estamos
-            definindo algumas regras de negócio que vão impactar diretamente no
-            produto, pois o que apresentei como protótipo, embora tenha sido
-            muito bem aceito, surgiram novas ideias para implementar.
-          </p>
-          <a
-            href="https://monbraz.vercel.app/"
-            target="_blank"
-            class="project-link"
-            >Acessar projeto</a
-          >
+        <div class="project-image-wrapper">
+          <img src="../assets/quirons.png" alt="Quirons" />
+          <div class="tech-icons">
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/typescript.svg"
+              alt="TypeScript"
+              title="TypeScript"
+            />
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/react.svg"
+              alt="React.js"
+              title="React.js"
+            />
+            <img
+              src="https://avatars.githubusercontent.com/u/20658825?s=200&v=4"
+              alt="Styled-Components"
+              title="Styled-Components"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg"
+              alt="Material-UI"
+              title="Material-UI"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/512px-GraphQL_Logo.svg.png"
+              alt="GraphQL"
+              title="GraphQL"
+            />
+            <img
+              src="https://storage.googleapis.com/datanyze-data//technologies/661e51bc2dc528583005b6ca11cd7f6ed79ad458.png"
+              alt="Apollo"
+              title="Apollo"
+            />
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png?f=webp"
+              alt="Node.js"
+              title="Node.js"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png"
+              alt="PostgreSQL"
+              title="PostgreSQL"
+            />
+            <img
+              src="https://images.seeklogo.com/logo-png/44/2/typeorm-logo-png_seeklogo-443592.png"
+              alt="TypeORM"
+              title="TypeORM"
+            />
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png"
+              alt="Jest"
+              title="Jest"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/cypress-1.svg"
+              alt="Cypress"
+              title="Cypress"
+            />
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/free-docker-11-1175228.png?f=webp"
+              alt="Docker"
+              title="Docker"
+            />
+            <img
+              src="https://raw.githubusercontent.com/webpack/media/master/logo/icon-square-big.png"
+              alt="Webpack"
+              title="Webpack"
+            />
+            <img
+              src="https://images.icon-icons.com/2699/PNG/512/microsoft_azure_logo_icon_170956.png"
+              alt="Azure"
+              title="Azure"
+            />
+          </div>
         </div>
-      </section>
-
-      <section class="project-section">
-        <img src="../assets/argos-gaze.png" alt="ArgosGaze" />
-        <div class="project-info">
-          <h2 class="project-title">ArgosGaze</h2>
-          <p>
-            Sistema para monitorar o impacto de um anúncio em um outdoors. Foi
-            criado um algoritmo que simula câmeras capturando o rosto de pessoas
-            que estão olhando por um certo tempo para o outdoor e assim vendo o
-            anúncio. Com base nestes dados iremos saber quais anúncios e onde
-            eles estão tendo maior impacto: bairros, centros, enfim, locais onde
-            os anúncios poderiam ser avaliados. Esse projeto foi desenvolvido
-            para apresentar a ideia para empresas de marketing.
-          </p>
-          <a
-            href="https://argos-gaze.vercel.app/"
-            target="_blank"
-            class="project-link"
-            >Acessar projeto</a
-          >
-        </div>
-      </section>
-
-      <section class="project-section reverse">
-        <img src="../assets/quirons.png" alt="Quirons" />
         <div class="project-info">
           <h2 class="project-title">Quirons</h2>
           <p>
-            Atuei na evolução do sistema de saúde ocupacional pela
-            NG-informáticas, aqui otimizei render, melhorei o carregamento de
-            páginas, eliminei alguns problemas com prop drilling, atualize libs
-            externas e internas, melhorei responsividade e layout dos
-            componentes, colaborei na padronização de código e manutenção de
-            bibliotecas internas como Flipper-UI e Amazing React Chart,
-            contribui também em alguns testes.
+            Sistema de saúde ocupacional desenvolvido pela NG-Informática.
+            Principais contribuições e resultados:
           </p>
+          <ul>
+            <li>
+              Correção de <strong>loops infinitos</strong> e outros bugs,
+              aumentando a performance em <strong>~60%</strong>.
+            </li>
+            <li>
+              Reorganização da arquitetura de pastas e separação de lógica e
+              estilos.
+            </li>
+            <li>
+              Atualização de bibliotecas, reduzindo <strong>~95%</strong> das
+              vulnerabilidades.
+            </li>
+            <li>Criação de testes unitários (Jest) e E2E (Cypress).</li>
+            <li>Correção de falhas em pipelines de CI/CD.</li>
+            <li>Melhorias de responsividade e UX.</li>
+            <li>Otimização de requisições com backend.</li>
+          </ul>
           <a href="https://quirons.com.br/" target="_blank" class="project-link"
             >Acessar projeto</a
           >
         </div>
       </section>
 
+      <!-- ===== Keepfy ===== -->
       <section class="project-section">
-        <img src="../assets/keepfy.png" alt="Keepfy" />
+        <div class="project-image-wrapper">
+          <img src="../assets/keepfy.png" alt="Keepfy" />
+          <div class="tech-icons">
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/typescript.svg"
+              alt="TypeScript"
+              title="TypeScript"
+            />
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/react.svg"
+              alt="React.js"
+              title="React.js"
+            />
+            <img
+              src="https://avatars.githubusercontent.com/u/20658825?s=200&v=4"
+              alt="Styled-Components"
+              title="Styled-Components"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg"
+              alt="Material-UI"
+              title="Material-UI"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/512px-GraphQL_Logo.svg.png"
+              alt="GraphQL"
+              title="GraphQL"
+            />
+            <img
+              src="https://storage.googleapis.com/datanyze-data//technologies/661e51bc2dc528583005b6ca11cd7f6ed79ad458.png"
+              alt="Apollo"
+              title="Apollo"
+            />
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png?f=webp"
+              alt="Node.js"
+              title="Node.js"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png"
+              alt="PostgreSQL"
+              title="PostgreSQL"
+            />
+            <img
+              src="https://images.seeklogo.com/logo-png/44/2/typeorm-logo-png_seeklogo-443592.png"
+              alt="TypeORM"
+              title="TypeORM"
+            />
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png"
+              alt="Jest"
+              title="Jest"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/cypress-1.svg"
+              alt="Cypress"
+              title="Cypress"
+            />
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/free-docker-11-1175228.png?f=webp"
+              alt="Docker"
+              title="Docker"
+            />
+            <img
+              src="https://raw.githubusercontent.com/webpack/media/master/logo/icon-square-big.png"
+              alt="Webpack"
+              title="Webpack"
+            />
+            <img
+              src="https://images.icon-icons.com/2699/PNG/512/microsoft_azure_logo_icon_170956.png"
+              alt="Azure"
+              title="Azure"
+            />
+          </div>
+        </div>
+        </div>
         <div class="project-info">
           <h2 class="project-title">Keepfy</h2>
           <p>
-            Plataforma CMMS para gestão de manutenção. Atuei pela
-            NG-informáticas, como no Quirons, no Keepfy eu otimizei render,
-            melhorei o carregamento de páginas, eliminei alguns problemas com
-            prop drilling, atualizei libs externas e internas, melhorei
-            responsividade e layout dos componentes, colaborei na padronização
-            de código e manutenção de bibliotecas internas como Flipper-UI e
-            Amazing-React-Chart.
+            Plataforma CMMS para gestão de manutenção. Principais contribuições
+            e resultados:
           </p>
+          <ul>
+            <li>
+              Otimização de renderização e remoção de condições de corrida (~55%
+              mais rápido).
+            </li>
+            <li>Organização da arquitetura e padronização de código.</li>
+            <li>
+              Atualização e substituição de bibliotecas, reduzindo
+              vulnerabilidades (~95%).
+            </li>
+            <li>Implementação de testes unitários (Jest) e E2E (Cypress).</li>
+            <li>Melhorias na responsividade e UX.</li>
+            <li>Integração otimizada com backend.</li>
+          </ul>
           <a href="https://keepfy.com/" target="_blank" class="project-link"
             >Acessar projeto</a
           >
         </div>
       </section>
 
+      <!-- ===== Flipper-UI ===== -->
       <section class="project-section reverse">
-        <img src="../assets/flipper-ui.png" alt="Flipper UI" />
+        <div class="project-image-wrapper">
+          <img src="../assets/flipper-ui.png" alt="Flipper UI" />
+          <div class="tech-icons">
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/typescript.svg"
+              alt="TypeScript"
+              title="TypeScript"
+            />
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/react.svg"
+              alt="React.js"
+              title="React.js"
+            />
+            <img
+              src="https://avatars.githubusercontent.com/u/20658825?s=200&v=4"
+              alt="Styled-Components"
+              title="Styled-Components"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg"
+              alt="Material-UI"
+              title="Material-UI"
+            />
+            <img
+              src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/storybook.png"
+              alt="Storybook"
+              title="Storybook"
+            />
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png"
+              alt="Jest"
+              title="Jest"
+            />
+            <img
+              src="https://raw.githubusercontent.com/webpack/media/master/logo/icon-square-big.png"
+              alt="Webpack"
+              title="Webpack"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png"
+              alt="GitHub"
+              title="Github"
+            />
+          </div>
+        </div>
         <div class="project-info">
           <h2 class="project-title">Flipper-UI</h2>
           <p class="highlight lime">Design system usado no Quirons e Keepfy</p>
           <p>
-            Contribuí no desenvolvimento dessa biblioteca interna, que se tornou
-            open-source.
+            Biblioteca interna open-source. Principais contribuições e
+            resultados:
           </p>
+          <ul>
+            <li>
+              Criação de componentes reutilizáveis, acessíveis e responsivos.
+            </li>
+            <li>Refatoração para performance e clareza de código.</li>
+            <li>Correção de problemas de dependências.</li>
+            <li>Criação e melhoria de testes unitários (Jest).</li>
+          </ul>
           <div>
             <a
               href="https://flipper-ui.ngi.com.br/?path=/docs/introduction--docs"
@@ -141,65 +300,179 @@
             >
             <a
               href="https://github.com/nginformatica/flipper-ui"
-              target="_blank"
               class="project-link"
+              target="_blank"
               >Ver repositório</a
             >
           </div>
         </div>
       </section>
 
+      <!-- ===== Amazing React Charts ===== -->
       <section class="project-section">
-        <img
-          src="../assets/amazing-react-charts.png"
-          alt="Amazing React Charts"
-        />
+        <div class="project-image-wrapper">
+          <img
+            src="../assets/amazing-react-charts.png"
+            alt="Amazing React Charts"
+          />
+          <div class="tech-icons">
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/typescript.svg"
+              alt="TypeScript"
+              title="TypeScript"
+            />
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/react.svg"
+              alt="React.js"
+              title="React.js"
+            />
+            <img
+              src="https://avatars.githubusercontent.com/u/20658825?s=200&v=4"
+              alt="Styled-Components"
+              title="Styled-Components"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg"
+              alt="Material-UI"
+              title="Material-UI"
+            />
+            <img
+              src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/storybook.png"
+              alt="Storybook"
+              title="Storybook"
+            />
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png"
+              alt="Jest"
+              title="Jest"
+            />
+            <img
+              src="https://raw.githubusercontent.com/webpack/media/master/logo/icon-square-big.png"
+              alt="Webpack"
+              title="Webpack"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png"
+              alt="GitHub"
+              title="Github"
+            />
+          </div>
+        </div>
         <div class="project-info">
           <h2 class="project-title">Amazing React Charts</h2>
           <p class="highlight orange">Biblioteca de gráficos usada no Keepfy</p>
           <p>
-            Auxiliei na implementação de gráficos interativos nesta biblioteca
-            open-source.
+            Biblioteca open-source para visualização de dados. Principais
+            contribuições e resultados:
           </p>
+          <ul>
+            <li>
+              Implementação e otimização de componentes de gráficos interativos.
+            </li>
+            <li>Refatoração de código para maior performance.</li>
+            <li>Correção de problemas de pacotes e dependências.</li>
+            <li>Criação e melhoria de testes unitários (Jest).</li>
+          </ul>
           <div>
             <a
               href="https://amazing-react-charts.ngi.com.br/?path=/docs/introduction--docs"
               class="project-link"
               target="_blank"
+              >Ver documentação</a
             >
-              Ver documentação
-            </a>
             <a
               href="https://github.com/nginformatica/amazing-react-charts"
-              target="_blank"
               class="project-link"
+              target="_blank"
+              >Ver repositório</a
             >
-              Ver repositório
-            </a>
           </div>
         </div>
       </section>
 
+      <!-- ===== Tegra ===== -->
       <section class="project-section reverse">
-        <img src="../assets/tegra.png" alt="Tegra" />
+        <div class="project-image-wrapper">
+          <img src="../assets/tegra.png" alt="Tegra" />
+          <div class="tech-icons">
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/typescript.svg"
+              alt="TypeScript"
+              title="TypeScript"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="JavaScript"
+              title="JavaScript"
+            />
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/react.svg"
+              alt="React.js"
+              title="React.js"
+            />
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/vue.svg"
+              alt="Vue.js"
+              title="Vue.js"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1024px-Nuxt_logo.svg.png"
+              alt="Nuxt.js"
+              title="Nuxt.js"
+            />
+            <img
+              src="https://raw.githubusercontent.com/portfolio-projetos-dev/assets/main/images/tailwind.svg"
+              alt="TailwindCSS"
+              title="TailwindCSS"
+            />
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png?f=webp"
+              alt="Node.js"
+              title="Node.js"
+            />
+            <img
+              src="https://w7.pngwing.com/pngs/684/413/png-transparent-figma-logo-thumbnail-tech-companies-thumbnail.png"
+              alt="Figma"
+              title="Figma"
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvCxePEsVs_W_lR82is_n98LeIrAPliR_eENLofYkknrhwOgpiV1eoxyxDqdxRC9Erqp4&usqp=CAU"
+              alt="Bitbucket"
+              title="Bitbucket"
+            />
+          </div>
+        </div>
         <div class="project-info">
           <h2 class="project-title">Tegra</h2>
           <p>
-            Atuei no desenvolvimento do site da empresa, e também em alguns
-            sistemas internos como de RH. Além de atuar em produtos para outras
-            empresas clientes da Tegra. Buscando sempre melhor performance e SEO
-            para as páginas.
+            Novo site institucional e sistemas internos da empresa. Principais
+            contribuições e resultados:
           </p>
+          <ul>
+            <li>
+              Entrega de telas e componentes com fidelidade de
+              <strong>100%</strong> ao Figma.
+            </li>
+            <li>Otimização de SEO e performance (~80% mais rápido).</li>
+            <li>Otimização de imagens e minificação de assets.</li>
+            <li>
+              Criação de componentes reutilizáveis e arquitetura organizada.
+            </li>
+            <li>Garantia de responsividade e acessibilidade.</li>
+            <li>
+              Participação em produtos de clientes com foco em performance e UX.
+            </li>
+          </ul>
           <a
             href="https://www.tegra.com.br/"
             target="_blank"
             class="project-link"
+            >Acessar projeto</a
           >
-            Acessar projeto
-          </a>
         </div>
       </section>
     </main>
+
     <!-- ======= Menu Mobile ======= -->
     <nav class="mobile-nav" aria-label="Menu de navegação mobile">
       <a href="../index.html" aria-label="Início" class="active">
